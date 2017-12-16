@@ -29,28 +29,48 @@
 ###Histogram of Oriented Gradients (HOG)
 
 ####1.HOG features extraction from the training images.
+
 The code for this step is contained in the first code cell 24 of the IPython notebook.
 I started by reading in all the `vehicle` and `non-vehicle` images.  Here is an example of one of each of the `vehicle` and `non-vehicle` classes:
 
 ![alt text][image1]
+
+
 
 I then explored different color spaces and different `skimage.hog()` parameters (`orientations`, `pixels_per_cell`, and `cells_per_block`).  I grabbed random images and displayed them to get a feel for what the `skimage.hog()` output looks like.
 
 
 Here is an example using the `Gray` image and HOG parameters of `orientations=8`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2)`:
 
+
+
 ![alt text][image3]
+
+
+
+
 
 ####2. Choice of HOG parameters.
 
+
 I tried various combinations of parameters for orientation, pixel_per_cell but kept cell_per_block constant at (2,2) and tried expermenting with SVM and RandomForest classifier to check thier accuracy. I got the maximum accuracy with pixel per cell at (8,8) and oreintation at 8
 
+
+
+
 ####3. Training a classifier using your selected HOG features and color features (cell 36).
+
+
 With Hog features, I also used HSV colorspace spatial fetaures as shown below
+
 ![alt text][image2]
+
+
 and also histogram features in HSV and RGB colorspace using 8 bins for each channel.
 I normalized all the features as shown below to avoid bias in weights.
+
 ![alt text][image4]
+
 
 I trained a linear SVM and Random Forest using this normalized data.
 The best accuracy of the classifier were:
