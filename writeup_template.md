@@ -17,8 +17,7 @@
 [image7]: ./output_images/single_output.png
 [image8]: ./output_images/sliding_window.png
 [image9]: ./output_images/final_test.png
-
-[video1]: ./output_images/dataset_exploration.png
+[image10]: ./output_images/final.png
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
 ###Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -86,14 +85,13 @@ The high probability of finding a car was found using thresholding this heatmap.
 Final_test_image
 ![alt text][image7]
 
+### Here the resulting bounding boxes are drawn onto the last frame in the series:
  
 ![alt text][image5]
 
 ### Here is the output of `scipy.ndimage.measurements.label()` on the integrated heatmap from all six frames:
-![alt text][image6]
+![alt text][image10]
 
-### Here the resulting bounding boxes are drawn onto the last frame in the series:
-![alt text][image7]
 
 
 
@@ -112,5 +110,6 @@ Here's a [link to my video result](./outut_project.mp4)
 
 ####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
-
+1. The window search technique can be improved by using probabisitic distribution which could reduce the latency of the pipeline
+2. The sclaing of the window need to set correctly to get accurate result. Could be improved by ising dynamic scaling once a vehicle is detected.
+3. Different sclaing in X and Y may also provide good results as car shapes are flat.
