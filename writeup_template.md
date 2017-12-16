@@ -95,21 +95,28 @@ Please see the below image to see the results.
 ![alt text][image5]
 
 
-####3. Heat Maps (Cell 53):
+### Heat Maps (Cell 53):
+
+
 I created heatmaps based upon the prediction of the classifier to avoid overlapping windows and false positive as shown in lecture. I recorded the positions of positive detections in each frame of the video.  From the positive detections I created a heatmap and then thresholded that map to identify vehicle positions.  I then used `scipy.ndimage.measurements.label()` to identify individual blobs in the heatmap.  I then assumed each blob corresponded to a vehicle.  I constructed bounding boxes to cover the area of each blob detected. 
 The high probability of finding a car was found using thresholding this heatmap. 
 
-### Here is a frames and their corresponding heatmaps:
+
+Heatmaps:
 ![alt text][image6]
+
+
 
 Final_test_image
 ![alt text][image7]
 
-### Here the resulting bounding boxes are drawn onto the last frame in the series:
+
+###Here the resulting bounding boxes are drawn onto the last frame in the series:
  
 ![alt text][image5]
 
 ### Here is the output of `scipy.ndimage.measurements.label()` on the integrated heatmap from all six frames:
+
 ![alt text][image10]
 
 
