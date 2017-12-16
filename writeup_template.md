@@ -14,7 +14,7 @@
 [image4]: ./output_images/feature_extraction.png
 [image5]: ./output_images/test_image.png
 [image6]: ./output_images/heatmap.png
-[image7]: ./output_images/single_output.png
+[image7]: ./output_images/single_ouput.png
 [image8]: ./output_images/sliding_window.png
 [image9]: ./output_images/final_test.png
 [image10]: ./output_images/final.png
@@ -108,6 +108,7 @@ Heatmaps:
 
 
 Final_test_image
+
 ![alt text][image7]
 
 
