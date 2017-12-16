@@ -9,13 +9,16 @@
 
 [//]: # (Image References)
 [image1]: ./output_images/dataset_exploration.png
-[image2]: ./examples/HOG_example.jpg
-[image3]: ./examples/sliding_windows.jpg
-[image4]: ./examples/sliding_window.jpg
-[image5]: ./examples/bboxes_and_heat.png
-[image6]: ./examples/labels_map.png
-[image7]: ./examples/output_bboxes.png
-[video1]: ./project_video.mp4
+[image2]: ./output_images/colorspace.png
+[image3]:./output_images/Hog.png
+[image4]: ./output_images/feature_extraction.png
+[image5]: ./output_images/test_image.png
+[image6]: ./output_images/heatmap.png
+[image7]: ./output_images/single_output.png
+[image8]: ./output_images/sliding_window.png
+[image7]: ./output_images/final_test.png
+
+[video1]: ./output_images/dataset_exploration.png
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
 ###Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
